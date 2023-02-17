@@ -1,0 +1,101 @@
+
+  .header {
+    width: 100%;
+    position: fixed;
+    transition: 0.3s all;
+    z-index: 500;
+    top: 0px;
+    padding: 10px 100px 10px 100px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 10px 0px 20px 10px rgba(212, 212, 212, 0.5);
+  }
+  header.shadow {
+    background: rgb(243, 243, 243);
+    box-shadow: 10px 0px 20px 10px rgba(212, 212, 212, 0.25);
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__item{
+    list-style-type: none;
+  }
+  .header__logo_img {
+    height: 90px;
+    transition: 0.3s all;
+  }
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    width: 850px;
+    margin: 0 0 0 80px;
+  }
+  .navbar__word {
+    text-transform: uppercase;
+    color: #292727c7;
+    text-decoration: none;
+    font-weight: 540;
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .navbar__word:hover {
+    color: #F7DE3A ;
+    transition: 1s all;
+  }
+
+
+  #cart-icon:hover {
+    animation: cos 1s infinite;
+  }
+  @keyframes cos {
+    0% {
+      transform: translateY(-3px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-3px);
+    }
+
+  }
+  #menu-btn{
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+    color: #ffc600;
+  }
+  .show{
+    display: block !important;
+  }
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 200;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 0.6em;
+  padding: 10px 20px 10px;
+  border-color: #F7DE3A;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #F7DE3A inset, 0 0 0 0 #F7DE3A;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+#myBtn:hover {
+  box-shadow: 0 0 10px 0 #F7DE3A inset, 0 0 10px 4px #F7DE3A;
+  color: #F7DE3A;
+  
+}
+

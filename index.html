@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="materiale, construct, vopsea">
+    <meta name="description" content="Big Construct">
+    <meta name="author" content="Purice Mihai">
+    <title>Big Construct</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="./Imagini/icon.png">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<div class="loader">
+    <div class="loader1"><img src="./Imagini/Loader.jpg" /></div>
+</div>
+    <header class="header">
+        <div class="container header__container">
+            <a href="./index.html" class="header__logo">
+                <img src="./Imagini/logo-tr.png" alt="Big Construct" class="header__logo_img">
+            </a>
+                <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+            <nav class="navbar">
+                <ul class="navbar__list" id="side-menu">
+                    <li class="navbar__item"><a href="./index.html" class="navbar__word active">PRINCIPALA</a></li>
+                    <li class="navbar__item"><a href="./compartimente/despre.html" class="navbar__word">DESPRE</a></li>
+                    <li class="navbar__item"><a href="./compartimente/produse.html" class="navbar__word">PRODUSE</a></li>
+                    <li class="navbar__item"><a href="./compartimente/informatii_utile.html" class="navbar__word">INFORMAȚII UTILE</a></li>
+                    <li class="navbar__item"><a href="./compartimente/promotii.html" class="navbar__word">PROMOȚII</a></li>
+                    <li class="navbar__item"><a href="./compartimente/contacte.html" class="navbar__word">CONTACTE</a></li>
+                </ul>
+            </nav>
+            
+            <i class='bx bx-cart-alt' id="cart-icon"></i>
+          
+               <div class="cart">
+                   <h2 class="cart-title">Coș</h2>
+                  
+                   <div class="border"></div>
+                   <div class="cart-content">
+   
+                   </div>
+                   <div class="border"></div>
+                  
+                   <div class="total">
+                       <div class="total-products">
+                           Prețul produselor:
+                           <div class="total-price-products font">0L</div>
+                       </div>
+                       <div class="total-products">
+                           Prețul livrării:
+                           <div class="font">50L</div>
+                       </div>
+                       <div class="total-products">
+                           Total:
+                           <div class="total-price font">0L</div>
+                       </div>
+                   </div>
+                  
+                   <div class="border"></div>
+                   <button type="button" class="btn-buy"><a class="telefon-click" href="tel:+37369408888">Comandă</a></button>
+                  
+                   <i class='bx bx-x' id="close-cart"></i>
+               </div>
+        </div>
+    </header>
+
+  <button onclick="topFunction()" id="myBtn" title="SUS"><i class="fa fa-angle-double-up"></i></button>
+
+    <div class="slider">
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Sisteme de fixare</h1>
+				<p>Un element esențial al multor proiecte de construcție și reparații.<br>
+                La noi sunt disponibile într-o varietate de dimensiuni și forme pentru a se potrivi cu nevoile fiecărui proiect.  </p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider1.jpg">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Cherestea</h1>
+				<p>Material natural, durabil și ușor de prelucrat.<br>
+                    O alegere populară pentru construcții de toate tipurile.</p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider2.jpg">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Cărămidă</h1>
+				<p>Culorile vii și finisajele fine.<br>
+                Pot fi folosite pentru a crea aspecte elegante și moderne într-o varietate de aplicații de construcție.</p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider3.jpg">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Metal</h1>
+				<p>Forme și dimensiuni variate pentru a crea structuri puternice și durabile.<br>
+                    Perfect pentru a reduce timpul și costurile de construcție. </p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider4.jpg">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+	</div>
+
+
+    <section class="about">
+        <h1 class="text-central">Despre Noi</h1>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./Imagini/despre.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>O scurta istorie...</span>
+                <p>BigConstruct este un importator direct al multor produse de construcție și ne mândrim cu livrarea acestora la clienții noștri. De la început, ne-am concentrat pe calitate și servicii, oferind materiale de construcție de înaltă calitate, la prețuri competitive și cu termene de livrare rapide. </p>
+                <p>Suntem o echipă de experți cu o vastă experiență în industria construcțiilor și suntem dedicați să satisfacem nevoile clienților noștri. La noi, clientul este mereu prioritatea noastră și ne străduim să oferim cele mai bune servicii posibile.</p>
+                <br>
+                <button class="button-about button-black-about"><a href="./compartimente/despre.html" class="btn-about">Citeste mai mult...</a></button>
+            </div>
+        </div>
+    </section>
+
+
+<div class="partners">
+    <h1 class="text-slider-partners">Partnerii Nostri</h1>
+    <div class="partners-slider">
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part1.png" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part2.jpg" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part3.png" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part4.png" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part5.jpg" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part6.jpg" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part7.png" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part8.png" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part9.jpg" alt=""></a></div>
+      <div class="item"><a href=""><img class="partners-img" src="./Imagini/part10.png" alt=""></a></div>
+    </div>
+</div>
+       <!-- Why us -->
+       <section id="why_us">
+        <div class="text-center">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="head_title">
+                        <h1 class="text-slider-partners">De ce Noi?
+                        </h1>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="why_us_item">
+                        <span class="fa fa-leaf"></span>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="why_us_item">
+                        <span class="fa fa-truck"></span>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="why_us_item">
+                        <span class="fa fa-group"></span>
+                        <h4>Lorem, ipsum dolor.</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="why_us_item">
+                        <span class="fa fa-line-chart"></span>
+                        <h4>Servicii profesionale...</h4>
+                        <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Why us end -->
+
+
+
+     <div class="disclaimer" onclick="button_onclick()" id="btn">
+        <p class="disclaimer-text">
+            Acest website a fost realizat în cadrul competiției ”Tekwill Junior Ambassadors” organizată de proiectul ”Tekwill în Fiecare Școală” și nu reflectă neapărat opinia proiectului. 
+        </p>
+        <button id="btn" class="button button-black"><span>OK</span></button>
+    </div>
+     <div class="footer_bottom">
+        <div class="footer">
+            <h2>Rețele de socializare</h2>
+            <div class="footer-social">
+                <a href=""><i class='bx bxl-facebook' ></i></a>
+                <a href=""><i class='bx bxl-ok-ru' ></i></a>
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+               
+            </div>
+         <p class="crp">© Copyrights 2023</p>
+    </div>
+
+    <script src="./js/slider.js"></script>
+    <script>     
+    const sr = ScrollReveal ({
+    distance: '20px',
+    duration: 1500,
+    delay: 300,
+    reset: true
+    })
+    sr.reveal('.partners',{delay: 300, origin: 'top'})
+    sr.reveal('.text-central',{delay: 100, origin: 'top'})
+    sr.reveal('.about-img',{delay: 400, origin: 'left'})
+    sr.reveal('.about-text',{delay: 400, origin: 'right'})
+    sr.reveal('.',{delay: 500, origin: 'left'})
+    sr.reveal('.',{delay: 500, origin: 'right'})
+    sr.reveal('.',{delay: 600, origin: 'top'})
+    sr.reveal('.',{delay: 400, origin: 'bottom'})
+    </script>
+    <script>
+     let header = document.querySelector('header');
+
+    window.addEventListener('scroll' , () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+    </script>
+    <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/6343b3161b.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

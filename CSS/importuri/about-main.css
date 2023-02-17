@@ -1,0 +1,56 @@
+.about-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  .about-img img {
+    width: 100%;
+  }
+  .about-text span {
+    font-weight: 500;
+    color: var(--main-color);
+    text-transform: uppercase;
+  }
+  .about-text p {
+    margin: 0.5rem 0 1.4rem;
+  }
+  .about-text .btn {
+    padding: 10px 20px;
+    background: var(--main-color);
+    color: #fff;
+    border-radius: 0.5rem;
+  }
+  .about-text .btn:hover {
+    background: var( --main-color);
+  }
+  .about{
+    padding: 12px 100px 20px 100px;
+  }
+  .button-about {
+  margin-top: 5px;
+	text-transform: uppercase;
+  min-width: 50px;
+	border-radius: 40px;
+  font-size: 22px;
+	padding:7px 50px;
+	position: relative;
+	overflow: hidden;
+	font-weight: 700;
+  border: rgba(255, 238, 0, 0.877) solid 3px;
+  background-color: white;
+  color: var(--main-color);
+  transition: .1s all;
+}
+.btn-about {
+	position: relative;
+  color: var(--main-color);
+  font-weight: 250;
+}
+.button-black-about:hover{ 
+  transition: .1s all;
+  opacity: .5;
+  border: #fff48f solid 3px;
+}

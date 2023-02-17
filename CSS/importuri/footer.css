@@ -1,0 +1,33 @@
+.footer_bottom {
+    background: #25282a;
+    width: 100%;
+    min-height: 60px;
+    float: left;
+    text-align: center;
+}
+.footer_bottom p.crp {
+    float: left;
+    margin: 0;
+    color: #fff;
+    font-size: 17px;
+    text-align: center;
+    width: 100%;
+    line-height: 50px;
+    padding-top: 10px;
+}
+.footer {
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
+    background: var(--main-color);
+  }
+  .footer h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.4rem;
+    color: #fff;
+  }
+  .footer-social a {
+    color: #fff;
+    font-size: 22px;
+    padding: 25px;
+  }

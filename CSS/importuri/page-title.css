@@ -1,0 +1,38 @@
+.text-principal{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    color: var(--text-black);
+   }
+   .text-principal::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--low-yellow);
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+   }
+   .text-central{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    position: relative;
+    margin-bottom: 45px;
+    color: var(--text-black);
+   }
+   .text-central::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 4px;
+    background-color: var(--low-yellow);
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+   }
