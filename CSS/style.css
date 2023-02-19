@@ -117,12 +117,12 @@ body {
     .navbar__list{
         flex-direction: column;
         display: none;
-        height: 70%;
+        height: 100%;
         width: 100%;
         position: fixed;
         background: #fff;
         right: 0;
-        line-height: 100px;
+        line-height: 120px;
         bottom: 100%;
         top: 50px;
         padding-left: 0px;
