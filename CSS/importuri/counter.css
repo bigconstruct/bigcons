@@ -1,0 +1,92 @@
+  .counter {
+    overflow: hidden;
+    position: relative;
+    margin-top: 20px;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0;
+    margin-right: -0,75rem;
+    margin-left: -0,75rem;
+  }
+  .row > * {
+    flex-shrink: 0;
+    width: 100%;
+    padding-right: 0.75rem;
+    padding-left:  0.75rem;
+    margin-top: 0;
+  }
+  .flex-contact {
+    flex: 0 0 25%;
+    width: 25%;
+  }
+   .counter:before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    opacity: .90;
+    background-image:  linear-gradient(180deg, #fffda3 0%, #dee039 100%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 2;
+    top: -20%;
+    left: -20%;
+  }
+  .counter .content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+  }
+  .counter .content .count-item {
+    display: inline-flex;
+    height: 215px;
+    position: relative;
+    width: 350px;
+  }
+  .counter .content .count-item:hover strong {
+    margin-top: 40px;
+  }
+  .counter .content .count-item strong {
+    display: block;
+    text-align: center;
+    font-weight: 600;
+    font-size: 36px;
+    letter-spacing: 0.25px;
+    margin-bottom: 10px;
+    padding-left: 40px;
+    color: #fff;
+    margin-top: 60px;
+    transition: all 0.3s ease 0s;
+  }
+  .counter .content .count-item span {
+    display: block;
+    padding-top: 25px;
+    padding-left: 10px;
+    text-align: center;
+    color: var(--text-grey);
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+  }
+  .counter .content .count-item span p{
+    display: block;
+    color: var(--text-grey);
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+  .contact-nr{
+    color: var(--text-grey);
+    line-height: 1.6;
+  }
