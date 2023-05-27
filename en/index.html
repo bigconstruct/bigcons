@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="materiale, construct, lemn, fier, metal, caramida, cuie, cherestrea, constructie, constructie, bigconstruct, vopsea, Cherestea, ciment, cerc, teava, armatura, aparate, CD, caramida">
+    <meta name="description" content="Big Construct">
+    <meta name="author" content="Purice Mihai, Iulian Stologan">
+    <title>Big Construct</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="../Imagini/icon.png">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+<div class="loader">
+    <div class="loader1"><img src="./Imagini/Loader.jpg" /></div>
+</div>
+    <header class="header">
+        <div class="header__container">
+            <a href="./index.html" class="header__logo">
+                <img src="./Imagini/logo-tr.png" alt="Big Construct" class="header__logo_img">
+            </a>
+                <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+            <nav class="navbar">
+                <ul class="navbar__list" id="side-menu">
+                    <li class="navbar__item"><a href="./index.html" class="navbar__word active">HOME</a></li>
+                    <li class="navbar__item"><a href="./compartimente/despre.html" class="navbar__word">ABOUT</a></li>
+                    <li class="navbar__item"><a href="./compartimente/produse.html" class="navbar__word">PRODUCTS</a></li>
+                    <li class="navbar__item dropdown "  onclick="showw()"><a class="navbar__word">USEFUL INFORMATION &nbsp;<i class="fa fa-caret-down"></i></a>
+                        <div class="dd" id="dd">
+                          <ul class="pian-p">
+                            <li class="pian"><a href="./compartimente/importuri.html">Imports</a></li>
+                            <li class="pian"><a href="./compartimente/livrare.html">Delivery</a></li>
+                            <li class="pian"><a href="./compartimente/lucrari-la-comanda.html">Custom work</a></li>
+                          </ul>
+                        </div>
+                    </li>
+                    <li class="navbar__item"><a href="./compartimente/contacte.html" class="navbar__word">CONTACTS</a></li>
+
+                </ul>
+            </nav>     
+            <div class="header__language" id="settings">
+                <div class="header__language-title">
+                    <img src="./Imagini/english.png" alt="language" class="header__language-label">
+                    En
+                </div>
+                <i class="fa fa-caret-down header__language-img"></i>
+                <ul class="header__language-wrapper">
+                    <li class="header__language-item header__language-item--active">
+                        <img src="./Imagini/romanian.png" class="header__language-icon" alt="romanian">
+                        <a href="./../index.html" class="header__language-link">Ro</a>
+                    </li>
+                    <li class="header__language-item" title="EUR">
+                        <img src="./Imagini/english.png" class="header__language-icon" alt="english">
+                        <a href="./index.html" class="header__language-link">En</a>
+                    </li>
+                </ul> 
+            </div>    
+            <i class='bx bx-cart-alt' id="cart-icon"></i>
+            <div class="cart">
+                <h2 class="cart-title">Bascket</h2>
+                <div class="border"></div>
+                <div class="cart-content"></div>
+                <div class="border"></div>
+                <button type="button" class="btn-buy"><a class="telefon-click" href="tel:+37362044422">Order</a></button>
+                <i class='bx bx-x' id="close-cart"></i>
+            </div>
+        </div>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="SUS"><i class="fa fa-angle-double-up"></i></button>
+
+    <div class="slider">
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Fastening systems</h1>
+				<p>An essential element of many construction and repair projects.<br>
+                We have them available in a variety of sizes and shapes to suit the needs of each project.  </p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider1.png">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Timber</h1>
+				<p>Natural material, durable and easy to process.<br>
+                    A popular choice for construction of all types.</p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider2.png">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Brick</h1>
+				<p>Vivid colors and fine finishes.<br>
+                They can be used to create sleek and modern looks in a variety of construction applications.</p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider3.png">
+		</div>
+		
+		<div class="myslide fade">
+			<div class="txt">
+				<h1>Metal</h1>
+				<p>Various shapes and sizes to create strong and durable structures.<br>
+                    Perfect for reducing construction time and costs.</p>
+			</div>
+			<img class="img-slide" src="./Imagini/slider4.png">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+		
+		<div class="dotsbox">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+	</div>
+
+    <section class="about">
+        <h1 class="text-central">About us</h1>
+        <div class="about-container">
+            <div class="about-img">
+                <img src="./Imagini/despre.png" alt="">
+            </div>
+            <div class="about-text">
+                <span>A brief history...</span>
+                <p>BigConstruct is a direct importer of many building products and we pride ourselves on delivering them to our customers. From the beginning, we have focused on quality and service, offering high-quality building materials at competitive prices and with fast delivery times.</p>
+                <p>We are a team of experts with extensive experience in the construction industry and are dedicated to meeting the needs of our clients. At us, the customer is always our priority and we strive to offer the best possible service.</p>
+                <br>
+                <button class="button-about button-black-about"><a href="./compartimente/despre.html" class="btn-about">Read more...</a></button>
+            </div>
+        </div>
+    </section>
+
+    <section id="why_us">
+        <div class="text-center">
+            <div class="row">
+                <div class="row-flex-why margin-left-why">
+                    <div class="head_title">
+                        <h1 class="text-slider-partners">Why Us?</h1>
+                        <p>There are a lot of options available in the market when it comes to choosing a company that supplies building materials. But we think there are some good reasons why people should choose our company:</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="flex-why-us flex-why-us-2">
+                    <div class="why_us_item">
+                        <span class="fa fa-leaf"></span>
+                        <h4>The quality of products</h4>
+                        <p>We import products directly from manufacturers to offer the best quality construction materials.</p>
+                    </div>
+                </div>
+                <div class="flex-why-us flex-why-us-2">
+                    <div class="why_us_item">
+                        <span class="fa fa-truck"></span>
+                        <h4>Fast delivery</h4>
+                        <p>We are aware of the importance of prompt work of construction materials. We have an efficient delivery system to ensure that products reach customers on time.</p>
+                    </div>
+                </div>
+                <div class="flex-why-us flex-why-us-2">
+                    <div class="why_us_item">
+                        <span class="fa fa-group"></span>
+                        <h4>Competitive prices</h4>
+                        <p>We strive to offer competitive prices without compromising on quality. Being a direct importer, we can negotiate prices with manufacturers and pass on the benefits to our customers.</p>
+                    </div>
+                </div>
+                <div class="flex-why-us flex-why-us-2">
+                    <div class="why_us_item">
+                        <span class="fa fa-line-chart"></span>
+                        <h4>Quality service</h4>
+                        <p>We focus on satisfying their needs and expectations by offering customized solutions adapted to each individual project.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h1 class="text-central">Products</h1>
+<section class="products responsive-products" id="products">
+    <!-- Product 1-->
+    <div class="product-box">
+        <div class="box">
+          <img src="./Imagini/produse/Produse-din-lemn.jpg"  class="product-img" alt="">
+          <h2 class="product-title">Timber</h2>
+        </div>
+    </div>
+    <!-- Product 2-->
+    <div class="product-box">
+        <div class="box">
+          <img src="./Imagini/produse/Produse-din-metal.png"  class="product-img" alt="">
+          <h2 class="product-title">Metal</h2>
+        </div>
+    </div>
+    <!-- Product 3-->
+    <div class="product-box">
+        <div class="box">
+          <img class="product-img" src="./Imagini/produse/ciment.png" alt="">
+          <h2 class="product-title">Dry mixes</h2>
+        </div>
+    </div>
+    <!-- Product 4-->
+    <div class="product-box">
+        <div class="box">
+          <img src="./Imagini/produse/Polistiren.png" class="product-img" alt="">
+          <h2 class="product-title">Polystyrene</h2>
+        </div>
+    </div>
+    <!-- Product 5-->
+    <div class="product-box">
+        <div class="box">
+          <img class="product-img" src="./Imagini/produse/Gips-carton.jpg" alt="">
+          <h2 class="product-title">Drywall</h2>
+        </div>
+    </div>   
+    <!-- Product 6-->
+    <div class="product-box">
+        <div class="box">
+          <img src="./Imagini/produse/Profil pentru Gips-carton.jpg"  class="product-img" alt="">
+          <h2 class="product-title">CD and UD</h2>
+        </div>
+    </div>
+    <!-- Product 7-->
+    <div class="product-box">
+        <div class="box">
+          <img src="./Imagini/produse/Cărbune.png.crdownload" class="product-img" alt="">
+          <h2 class="product-title">Coal</h2>
+        </div>
+    </div>
+    <!-- Product 8-->
+    <div class="product-box">
+        <div class="box">
+          <img class="product-img" src="./Imagini/produse/Betoniere.jpg" alt="">
+          <h2 class="product-title">Concrete mixers</h2>
+        </div>
+    </div>
+</section>
+
+    <div class="video">
+        <div class="container">
+            <button type="button" class="btn-play">
+                <a href="https://youtu.be/Xdaqnd5uN44" type="video/mp4"></a>
+            </button>
+        </div>
+    </div>
+
+    <h1 class="text-central">Our Team</h1>
+    <div class="team">
+            <div class="row justify">
+                <div class="flex-team left-team">
+                    <div class="team-item">
+                        <div class="team-img">
+                            <img src="./Imagini/team-work.jpg">
+                        </div>
+                        <div class="team-text">
+                            <h2>Burduja Corneliu</h2>
+                            <p>Founder</p>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/profile.php?id=100090107542705"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-team">
+                    <div class="team-item right-team">
+                        <div class="team-img">
+                            <img src="./Imagini/team-work.jpg">
+                        </div>
+                        <div class="team-text">
+                            <h2>Burduja Alexandru</h2>
+                            <p>Founder</p>
+                        </div>
+                        <div class="team-social">
+                            <a class="social-fb" href="https://www.facebook.com/profile.php?id=100090107542705"><i class="fab fa-facebook-f"></i></a>
+                            <a class="social-in" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <div class="partners">
+        <h1 class="text-slider-partners">Our Partners</h1>
+        <div class="partners-slider">
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part1.png" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part2.jpg" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part3.png" alt=""></a></div>
+          <div class="item"><a href="https://kimicar.md/"><img class="partners-img" src="./Imagini/part11.png" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part4.png" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part5.jpg" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part6.jpg" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part7.png" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part8.png" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part9.jpg" alt=""></a></div>
+          <div class="item"><a href=""><img class="partners-img" src="./Imagini/part10.png" alt=""></a></div>
+        </div>
+    </div>
+
+    <h1 class="text-central bt0">Gallery</h1>
+    <div class="galerie">
+        <div class="galerie-body">
+            <div class="wrapper">
+                <img class="galerie-img" src="./Imagini/galerie/galerie1.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie2.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie3.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie4.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie5.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie6.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie7.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie8.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie9.jpg" alt="">
+                <img class="galerie-img" src="./Imagini/galerie/galerie10.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+     <div class="disclaimer" id="btn">
+        <p class="disclaimer-text">
+            This website was created as part of the "Tekwill Junior Ambassadors" competition organized by the "Tekwill în Fiecare Școală" project and does not necessarily reflect the opinion of the project.
+        </p>
+        <button id="btn" onclick="button_onclick()" class="button button-black"><span>OK</span></button>
+    </div>
+
+ <footer id="footer">
+    <div class="row">
+        <div class="flex-footer">
+          <a href="index.html"><img src="./Imagini/logo-tr.png" alt="" class="logo-footer"></a>
+            <div class="footer-about">
+                <p>Big Construct is the company that offers the best quality products at an affordable price. We have an efficient delivery system to ensure that the products reach customers on time. Always by your side for a correct choice!</p>
+            </div>
+        </div>
+        <div class="flex-footer">
+          <div class="useful-link">
+            <h2>BigConstruct pages</h2>
+            <div class="use-links">
+              <li><a href="./index.html"><i class='bx bx-chevrons-right'></i>HOME</a></li>
+              <li><a href="./compartimente/despre.html"><i class='bx bx-chevrons-right'></i> ABOUT</a></li>
+              <li><a href="./compartimente/produse.html"><i class='bx bx-chevrons-right'></i> PRODUCTS</a></li>
+              <li><a href="./compartimente/importuri.html"><i class='bx bx-chevrons-right'></i> IMPORTS</a></li>
+              <li><a href="./compartimente/livrare.html"><i class='bx bx-chevrons-right'></i> DELIVERY</a></li>
+              <li><a href="./compartimente/lucrari-la-comanda.html"><i class='bx bx-chevrons-right'></i> CUSTOM WORK</a></li>
+              <li><a href="./compartimente/contacte.html"><i class='bx bx-chevrons-right'></i> CONTACTS</a></li>
+            </div>
+          </div>
+        </div>
+        <div class="flex-footer">
+          <div class="social-links">
+           <h2>Social networks</h2>
+            <div class="social-icons">
+                <li><a href="https://www.facebook.com/profile.php?id=100090107542705"><i class='bx bxl-facebook'></i> Facebook</a></li>
+                <li><a href="https://www.youtube.com/@bigconstruct"><i class='bx bxl-youtube'></i> Youtube</a></li>
+                <li><a href=""><i class='bx bxl-instagram'></i> Instagram</a></li>
+            </div>
+          </div>
+         </div>
+        <div class="flex-footer">
+          <div class="address">
+            <h2>Contacts</h2>
+            <div class="address-links">
+                <li><a href=""><i class='bx bx-been-here'></i> Florești City, Street Stefan cel Mare 67A</a></li>
+                <li><a href="tel:062044422"><i class='bx bx-phone'></i>+37362044422</a></li>
+                <li><a href=""><i class='bx bx-envelope'></i> build.bigconstruct@gmail.com</a></li>
+            </div>
+          </div>
+        </div>               
+    </div>
+ </footer>
+  <section id="copy-right">
+    <div class="copy-right-sec"> 
+        Copyrights © 2023. All Rights Reserved. Design by Stologan Iulian & Develop by Mihai Purice. 
+    </div>
+  </section>
+
+<!-- Messenger Plugin pentru chat Code -->
+<div id="fb-root"></div>
+
+<!-- Your Plugin pentru chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100735382957686");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ro_RO/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-088H71MTV5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-088H71MTV5');
+</script>
+
+    <script src="./js/slider.js"></script>
+<script>
+    $(() => {
+        $('.header__language').on('click', () => {
+          $('.header__language').toggleClass('header__language--active');
+      
+          $(window).on('scroll', () => {
+              $('.header__language').removeClass('header__language--active');
+          });
+      
+          $('html').on('click', event => {
+              if (event.target.id != 'settings' && $(event.target).parents('#settings').length == 0) {
+                  $('.header__language').removeClass('header__language--active');   
+              }
+          });
+        });
+    });
+</script>
+<script>     
+    const sr = ScrollReveal ({
+    distance: '5px',
+    duration: 1500,
+    delay: 100,
+    reset: true
+    })
+    sr.reveal('.partners',{delay: 300, origin: 'top'})
+    sr.reveal('.about-img',{delay: 400, origin: 'left'})
+    sr.reveal('.about-text',{delay: 400, origin: 'right'})
+    sr.reveal('.why_us_item',{delay: 100, origin: 'top'})
+
+    </script>
+    <script>
+     let header = document.querySelector('header');
+
+    window.addEventListener('scroll' , () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+</script>
+    <script src="./js/scroll.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://kit.fontawesome.com/6343b3161b.js" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

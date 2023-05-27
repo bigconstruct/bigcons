@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="materiale, construct, lemn, fier, metal, caramida, cuie, cherestrea, constructie, constructie, bigconstruct">
+    <meta name="description" content="Big Construct">
+    <meta name="author" content="Purice Mihai, Iulian Stologan">
+    <title>Paints, primers, glazes - Big Construct</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,400,500,700,900" rel="stylesheet">
+    <link rel="icon" href="../../Imagini/icon.png">
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+        <a href="../../index.html" class="header__logo">
+            <img src="../../Imagini/logo-tr.png" alt="Big Construct" class="header__logo_img">
+        </a>
+            <i id="menu-btn" class="fas fa-bars" onclick="show()"></i>
+        <nav class="navbar">
+            <ul class="navbar__list" id="side-menu">
+                <li class="navbar__item"><a href="../../index.html" class="navbar__word active">HOME</a></li>
+                <li class="navbar__item"><a href="../../compartimente/despre.html" class="navbar__word">ABOUT</a></li>
+                <li class="navbar__item"><a href="../../compartimente/produse.html" class="navbar__word">PRODUCTS</a></li>
+                <li class="navbar__item dropdown "  onclick="showw()"><a class="navbar__word">USEFUL INFORMATION &nbsp;<i class="fa fa-caret-down"></i></a>
+                    <div class="dd" id="dd">
+                      <ul class="pian-p">
+                        <li class="pian"><a href="../../compartimente/importuri.html">Imports</a></li>
+                        <li class="pian"><a href="../../compartimente/livrare.html">Delivery</a></li>
+                        <li class="pian"><a href="../../compartimente/lucrari-la-comanda.html">Custom work</a></li>
+                      </ul>
+                    </div>
+                </li>
+                <li class="navbar__item"><a href="../../compartimente/contacte.html" class="navbar__word">CONTACTS</a></li>
+
+            </ul>
+        </nav>     
+        <div class="header__language" id="settings">
+            <div class="header__language-title">
+                <img src="../../Imagini/english.png" alt="language" class="header__language-label">
+                En
+            </div>
+            <i class="fa fa-caret-down header__language-img"></i>
+            <ul class="header__language-wrapper">
+                <li class="header__language-item header__language-item--active">
+                    <img src="../../Imagini/romanian.png" class="header__language-icon" alt="romanian">
+                    <a href="/compartimente/product-content/Vopsele-grunduri-gleturi.html" class="header__language-link">Ro</a>
+                </li>
+                <li class="header__language-item" title="EUR">
+                    <img src="../../Imagini/english.png" class="header__language-icon" alt="english">
+                    <a href="/en/compartimente/product-content/Vopsele-grunduri-gleturi.html" class="header__language-link">En</a>
+                </li>
+            </ul> 
+        </div>    
+        <i class='bx bx-cart-alt' id="cart-icon"></i>
+        <div class="cart">
+            <h2 class="cart-title">Bascket</h2>
+            <div class="border"></div>
+            <div class="cart-content"></div>
+            <div class="border"></div>
+            <button type="button" class="btn-buy"><a class="telefon-click" href="tel:+37362044422">Order</a></button>
+            <i class='bx bx-x' id="close-cart"></i>
+        </div>
+    </div>
+</header>
+
+   <h1 class="text-contact">Paints, primers, glazes</h1>
+
+<section class="products" id="products">
+            <!-- Product 1-->
+    <div class="product-box">
+        <div class="box">
+            <img src="../../Imagini/produse/Imagini-produse/Grund GAMA-COLOr.jpg"  class="product-img" alt="">
+            <h2 class="product-title">Primer "GAMA-COLOR"</h2>
+            <h3 class="price">0.75L</h3>
+            <i class='fas fa-cart-arrow-down add-cart'></i>
+            <span class="reducere">SUPER PRICE</span>
+        </div>
+    </div>
+             <!-- Product 2-->
+        <div class="product-box">
+            <div class="box">
+                <img src="../../Imagini/produse/Imagini-produse/Grund Email Coloriks.jpg"  class="product-img" alt="">
+                <h4 class="product-title">Primer Email Coloriks Premium</h4>
+                <h3 class="price">0.9L</h3>
+                <i class="fas fa-cart-arrow-down add-cart"></i>
+                <span class="reducere">SUPER PRICE</span>
+            </div>
+        </div>
+            <!-- Product 3-->
+    <div class="product-box">
+        <div class="box">
+            <img class="product-img" src="../../Imagini/produse/Imagini-produse/Vopsea Email PF-115 (verde-aprins) 0.8 kg NOVA.jpg" alt="">
+            <h2 class="product-title">Paint Email NOVA PF-115</h2>
+            <h3 class="price">0.8L</h3>
+            <i class="fas fa-cart-arrow-down add-cart"></i>
+            <span class="reducere">SUPER PRICE</span>
+        </div>
+    </div>
+            <!-- Product 4-->
+        <div class="product-box">
+            <div class="box">
+                <img src="../../Imagini/produse/Imagini-produse/Vopsea Hammer Black.jpg" class="product-img" alt="">
+                <h2 class="product-title">Paint Hammer Black</h2>
+                <h3 class="price">0.75L</h3>
+                <i class="fas fa-cart-arrow-down add-cart"></i>
+                <span class="reducere">SUPER PRICE</span>
+            </div>
+        </div>
+        <nav class="nav-pagination" aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item">
+                <a class="page-link" href="../../compartimente/product-content/Vopsele-grunduri-gleturi.html" aria-label="Previous">
+                  <span aria-hidden="true">&laquo;</span>
+                </a>
+              </li>
+              <li class="page-item"><a class="page-link" href="../../compartimente/product-content/Vopsele-grunduri-gleturi.html">1</a></li>
+              <li class="page-item">
+                <a class="page-link" href="../../compartimente/product-content/Vopsele-grunduri-gleturi.html" aria-label="Next">
+                  <span aria-hidden="true">&raquo;</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+</section>
+<footer id="footer">
+  <div class="row">
+      <div class="flex-footer">
+        <a href="/en/index.html"><img src="../../Imagini/logo-tr.png" alt="" class="logo-footer"></a>
+          <div class="footer-about">
+              <p>Big Construct is the company that offers the best quality products at an affordable price. We have an efficient delivery system to ensure that the products reach customers on time. Always by your side for a correct choice!</p>
+          </div>
+      </div>
+      <div class="flex-footer">
+        <div class="useful-link">
+          <h2>BigConstruct pages</h2>
+          <div class="use-links">
+            <li><a href="../../index.html"><i class='bx bx-chevrons-right'></i>HOME</a></li>
+            <li><a href="../../compartimente/despre.html"><i class='bx bx-chevrons-right'></i> ABOUT</a></li>
+            <li><a href="../../compartimente/produse.html"><i class='bx bx-chevrons-right'></i> PRODUCTS</a></li>
+            <li><a href="../../compartimente/importuri.html"><i class='bx bx-chevrons-right'></i> IMPORTS</a></li>
+            <li><a href="../../compartimente/livrare.html"><i class='bx bx-chevrons-right'></i> DELIVERY</a></li>
+            <li><a href="../../compartimente/lucrari-la-comanda.html"><i class='bx bx-chevrons-right'></i> CUSTOM WORK</a></li>
+            <li><a href="../../compartimente/contacte.html"><i class='bx bx-chevrons-right'></i> CONTACTS</a></li>
+          </div>
+        </div>
+      </div>
+      <div class="flex-footer">
+        <div class="social-links">
+         <h2>Social networks</h2>
+          <div class="social-icons">
+              <li><a href="https://www.facebook.com/profile.php?id=100090107542705"><i class='bx bxl-facebook'></i> Facebook</a></li>
+              <li><a href="https://www.youtube.com/@bigconstruct"><i class='bx bxl-youtube'></i> Youtube</a></li>
+              <li><a href=""><i class='bx bxl-instagram'></i> Instagram</a></li>
+          </div>
+        </div>
+       </div>
+      <div class="flex-footer">
+        <div class="address">
+          <h2>Contacts</h2>
+          <div class="address-links">
+              <li><a href=""><i class='bx bx-been-here'></i> Florești City, Street Stefan cel Mare 67A</a></li>
+              <li><a href="tel:062044422"><i class='bx bx-phone'></i>+37362044422</a></li>
+              <li><a href=""><i class='bx bx-envelope'></i> build.bigconstruct@gmail.com</a></li>
+          </div>
+        </div>
+      </div>               
+  </div>
+</footer>
+<section id="copy-right">
+  <div class="copy-right-sec"> 
+      Copyrights © 2023. All Rights Reserved. Design by Stologan Iulian & Develop by Mihai Purice. 
+  </div>
+</section>
+<!-- Messenger Plugin pentru chat Code -->
+<div id="fb-root"></div>
+<!-- Your Plugin pentru chat code -->
+<div id="fb-customer-chat" class="fb-customerchat">
+</div>
+<script>
+  var chatbox = document.getElementById('fb-customer-chat');
+  chatbox.setAttribute("page_id", "100735382957686");
+  chatbox.setAttribute("attribution", "biz_inbox");
+</script>
+<!-- Your SDK code -->
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v16.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/ro_RO/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+<script>
+  $(() => {
+      $('.header__language').on('click', () => {
+        $('.header__language').toggleClass('header__language--active');
+    
+        $(window).on('scroll', () => {
+            $('.header__language').removeClass('header__language--active');
+        });
+    
+        $('html').on('click', event => {
+            if (event.target.id != 'settings' && $(event.target).parents('#settings').length == 0) {
+                $('.header__language').removeClass('header__language--active');   
+            }
+        });
+      });
+  });
+</script>
+    <button onclick="topFunction()" id="myBtn" title="SUS"><i class="fa fa-angle-double-up"></i></button>
+    <script src="../js/slider.js"></script>
+    <script>     
+    const sr = ScrollReveal ({
+    distance: '10px',
+    duration: 1500,
+    delay: 100,
+    reset: true
+})
+    sr.reveal('.product-box',{delay: 150, origin: 'top'})
+    sr.reveal('.product-box-solo',{delay: 150, origin: 'top'})
+    sr.reveal('.product-box-duo',{delay: 150, origin: 'top'})
+    sr.reveal('.product-box-trio',{delay: 150, origin: 'top'})
+    </script>
+    <script>
+     let header = document.querySelector('header');
+
+    window.addEventListener('scroll' , () => {
+        header.classList.toggle('shadow', window.scrollY > 0);
+    });
+    </script>
+    <script src="../../js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.1/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="https://kit.fontawesome.com/6343b3161b.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="../../js/main.js"></script>
+    <script src="../../js/cart.js"></script>
+</body>
+</html>
