@@ -1,0 +1,219 @@
+.header {
+  width: 100%;
+  position: fixed;
+  transition: 0.3s all;
+  z-index: 500;
+  top: 0px;
+  padding: 10px 100px 10px 100px;
+  background: rgba(255,255,255,0.7);
+  box-shadow: 10px 0px 20px 10px rgba(212, 212, 212, 0.659);
+}
+header.shadow {
+  background: rgb(255, 255, 255);
+  box-shadow: 10px 0px 20px 10px rgba(212, 212, 212, 0.403);
+  }
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__item{
+    list-style-type: none;
+  }
+  .header__logo_img {
+    height: 90px;
+    transition: 0.3s all;
+  }
+  .navbar__list {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 0 0 0px;
+  }
+  .navbar__word {
+    text-transform: uppercase;
+    color: #292727c7;
+    text-decoration: none;
+    font-weight: 540;
+    font-size: 20px;
+    position: relative;
+    transition: 0.3s;
+  }
+  .navbar__word:hover {
+    color: #d6c450 ;
+    transition: 1s all;
+    cursor: pointer;
+  }
+  #dd:hover > a .fa-caret-down {
+    display:none;
+  }
+  .dropdown:hover {
+    border-bottom:none;
+  }
+  .dropdown:before >  .dd{  
+    display:block;
+}
+ .dd{
+  position:absolute;
+  margin-top: 45px;
+  background-color:black;
+  display:none;
+  background-color:rgb(243, 243, 243);
+  min-width: 220px;
+ }
+ .pian{
+  margin:20px 3px 20px 3px;
+  list-style:none;
+  text-align: center;
+  text-transform: uppercase;
+ }
+ .pian a {
+  padding : 5px;
+  font-weight: 500;
+  color:var(--text-black);
+}
+ .pian-p{
+  padding: 0;
+ }
+  #cart-icon:hover {
+    animation: cos 1s infinite;
+  }
+  @keyframes cos {
+    0% {
+      transform: translateY(-3px);
+    }
+    50%{
+      transform: translateY(0px);
+    }
+    100% {
+      transform: translateY(-3px);
+    }
+
+  }
+  #menu-btn{
+    font-size: 25px;
+    cursor: pointer;
+    z-index: 100;
+    display: none;
+    color: #ffc600;
+  }
+  .show{
+    display: block !important;
+  }
+  .showw{
+    display: block !important;
+  }
+  #myBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 200;
+  font-size: 32px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  box-sizing: border-box;
+  border-radius: 0.6em;
+  padding: 10px 20px 10px;
+  border-color: #F7DE3A;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #F7DE3A inset, 0 0 0 0 #F7DE3A;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+#myBtn:hover {
+  box-shadow: 0 0 10px 0 #F7DE3A inset, 0 0 10px 4px #F7DE3A;
+  color: #F7DE3A;
+  
+}
+
+.header__language {
+  display: flex;
+  cursor: pointer;
+  transition: 0.3s all;
+  position: relative;
+}
+.header__language--active .header__language-wrapper {
+  opacity: 1;
+  top: 51px;
+  visibility: visible;
+}
+.fa-caret-down{
+  font-size: 20px;
+  color: #292727c7;
+}
+.fa-caret-down:hover {
+  color: #d6c450 ;
+  transition: 1s all;
+}
+
+.header__language-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 80px;
+  opacity: 0;
+  position: absolute;
+  cursor: auto;
+  top: 55px;
+  visibility: hidden;
+  background-color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 13px;
+  transition: all 0.25s ease;
+}
+.header__language-wrapper::before {
+  content: '';
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #313131;
+  top: -7px;
+  left: calc(50% - 7px);
+  transform: rotate(-45deg);
+}
+.header__language-link {
+  font-size: 17px;
+  color: #333333;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s all;
+  width: 100%;
+}
+.header__language-item {
+  padding: 4px 0;
+  cursor: pointer;
+}
+.header__language-item:hover .header__language-link {
+  color: #d6c450;
+}
+.header__language-icon {
+  width: 18px;
+  margin-right: 2px;
+}
+.header__language-title {
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  margin-right: 7px;
+  color: #292727c7;
+}
+.header__language-title:hover {
+  color: #d6c450 ;
+  transition: 1s all;
+}
+.header__language-img {
+  width: 20px;
+  transform: translateY(-1px);
+  fill: #fff;
+}
+.header__language-label {
+  width: 20px;
+  margin-right: 7px;
+}
